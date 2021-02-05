@@ -1,0 +1,162 @@
+body {
+    overflow-x: hidden;
+}
+
+#gif-container {
+    background-color: #0B315C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    top: 18vh;
+}
+
+.gif {
+    background-color: #4974A6;
+    display: flex;
+    flex-direction: column;
+    height: 17vw;
+    width: 17vw;
+    overflow: hidden;
+    margin: 1vw;
+
+    border: 1px solid #000;
+    border-radius: 10px;
+
+
+}
+
+.gif img {
+    height: 80%;
+    transform-origin: center;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.gif-title, .tag {
+    font-family: 'Rubik', sans-serif;
+}
+
+.gif-title {
+    font-weight: bold;
+}
+
+.tag:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+}
+
+.tag {
+    text-align: center;
+    background-color: #70B3FF;
+    width: 6vw;
+    border-radius: 3px;
+
+/*    -webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.6);*/
+}
+
+.la-heart {
+    color: red;
+}
+
+.error {
+    color: red;
+}
+
+.valid {
+    color: green;
+}
+
+
+/* DISPLAY NONE */
+
+.display-none {
+    display: none;
+}
+
+/*---------------------------------------- NAV-BAR ----------------------------------------*/
+
+#nav-item-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+#footer {
+    width: 100vw;
+    background-color: #70B3FF;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav-bar {
+    width: 100vw;
+    background-color: #70B3FF;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+}
+
+#search-container {
+    margin-left: 3vw;
+}
+
+#nav-form {
+    margin-right: 3vw;
+
+}
+
+#nav-add-gif {
+    padding: 3px 5px;
+    border: none;
+    border-radius: 5px;
+    color: #124580;
+}
+
+.la-angle-down {
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 3vh;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#search-container > select, #nav-form > input, #nav-form > select, #search-container > #search-bar {
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    color: #124580;
+}
+
+/* LIKES */
+
+.like-container {
+    font-family: "Rubik", sans-serif;
+}
+
+.delete , .la-heart {
+    font-size: 20px;
+    margin: 3px;
+}
+
+.delete {
+    left: 40px;
+    width: 1.5vw;
+    cursor: pointer;
+}
+
